@@ -103,3 +103,14 @@ This portfolio is presented for professional networking and opportunity explorat
 *"Bridging innovation with tradition, technology with trust, and global perspective with local expertise."*
 
 ⭐ **Star this repository if you find my work interesting!**
+
+
+## Resume Backup
+
+The `resume/` directory contains the latest backup of Joseph's professional resume:
+
+- **HTML Resume**: `resume/joseph_lee_resume.html` - Professional resume with updated contact information
+- **Contact**: joeyleepcs@gmail.com | WhatsApp: +50661500559
+- **Last Updated**: December 2024
+
+The resume is optimized for PDF export and web viewing, tailored specifically for legal marketing positions.

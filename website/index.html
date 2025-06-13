@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joseph Andrew Lee - Professional Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .header .subtitle {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .contact-info a {
+            color: #3498db;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .contact-info a:hover {
+            color: #2980b9;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        .section h2 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .companies {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .company-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .company-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .company-card h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        .company-card .role {
+            font-style: italic;
+            margin-bottom: 1rem;
+            opacity: 0.9;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .skill-category h3 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .skill-category ul {
+            list-style: none;
+        }
+
+        .skill-category li {
+            padding: 0.3rem 0;
+            border-left: 3px solid #3498db;
+            padding-left: 1rem;
+            margin: 0.3rem 0;
+        }
+
+        .education-item {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 5px;
+            margin: 1rem 0;
+            border-left: 4px solid #3498db;
+        }
+
+        .education-item h3 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .education-item .degree {
+            font-weight: bold;
+            color: #27ae60;
+        }
+
+        .footer {
+            text-align: center;
+            color: white;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .contact-info {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Joseph Andrew Lee</h1>
+            <p class="subtitle">Digital Marketing Strategist & Legal Industry Innovator</p>
+            <div class="contact-info">
+                <span>📧 joe@xmrt.io</span>
+                <span>🌐 Costa Rica</span>
+                <a href="https://web3joelee.vercel.app" target="_blank">💼 Portfolio</a>
+                <a href="https://muckrack.com/joseph_a_lee" target="_blank">📰 MuckRack</a>
+            </div>
+        </header>
+
+        <section class="section">
+            <h2>Professional Summary</h2>
+            <p>Dynamic CEO and digital marketing strategist with Harvard-trained journalism expertise and proven track record of building scalable businesses through innovative marketing strategies. As founder of Party Favor Photo and XMRT.io, I've successfully navigated competitive markets while developing deep understanding of professional services marketing.</p>
+            <p style="margin-top: 1rem;">Uniquely positioned for legal marketing through lifelong immersion in the legal profession—raised by an attorney and with my sister currently serving as Senior Paralegal at Allianz—providing innate understanding of legal industry dynamics, client acquisition challenges, and professional standards.</p>
+        </section>
+
+        <section class="section">
+            <h2>Current Companies</h2>
+            <div class="companies">
+                <div class="company-card">
+                    <h3>🎯 Party Favor Photo</h3>
+                    <p class="role">CEO & Founder | 2020 – Present</p>
+                    <p>Comprehensive event photography business serving corporate and private clients across Costa Rica and internationally. Built sustainable business model with consistent revenue growth and strong client retention through innovative digital marketing strategies.</p>
+                </div>
+                <div class="company-card">
+                    <h3>💻 XMRT.io</h3>
+                    <p class="role">CEO & Founder | 2021 – Present</p>
+                    <p>Innovative technology platform addressing market inefficiencies through Web3 solutions. Leading product development, go-to-market strategy, and building strategic partnerships within the emerging technology ecosystem.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Harvard University | Cambridge, MA</h3>
+                <p class="degree">Master of Journalism | 2017</p>
+                <p>Advanced graduate study in investigative journalism, media ethics, and digital storytelling. Developed expertise in research methodologies, audience analysis, and compelling narrative construction.</p>
+            </div>
+            <div class="education-item">
+                <h3>Excelsior College | Albany, NY</h3>
+                <p class="degree">Bachelor of Business Administration | Summa Cum Laude | 2007</p>
+                <p>Comprehensive foundation in business strategy, marketing principles, financial management, and organizational leadership.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Core Competencies</h2>
+            <div class="skills">
+                <div class="skill-category">
+                    <h3>Digital Marketing Excellence</h3>
+                    <ul>
+                        <li>Multi-platform campaign development</li>
+                        <li>Content strategy and brand storytelling</li>
+                        <li>SEO/SEM optimization and analytics</li>
+                        <li>Social media strategy</li>
+                        <li>Marketing automation and CRM</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Legal Industry Expertise</h3>
+                    <ul>
+                        <li>Legal professional culture understanding</li>
+                        <li>Compliance and confidentiality standards</li>
+                        <li>Law firm operations insight</li>
+                        <li>Professional ethics knowledge</li>
+                        <li>Client decision-making processes</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Technology & Innovation</h3>
+                    <ul>
+                        <li>Web development and platforms</li>
+                        <li>Web3 and blockchain applications</li>
+                        <li>Data analytics and measurement</li>
+                        <li>Emerging technology integration</li>
+                        <li>Digital transformation</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Legal Industry Connection</h2>
+            <p><strong>Deep Family Roots in Legal Practice:</strong> My perspective on legal marketing is uniquely informed by lifelong immersion in the legal profession. Raised by an attorney, I developed early appreciation for the precision, ethics, and client-focused approach essential to legal practice.</p>
+            <p style="margin-top: 1rem;">My sister's current role as Senior Paralegal at Allianz offers ongoing insight into modern legal operations, compliance requirements, and the evolving landscape of legal services delivery. This provides me with intuitive understanding of legal professional culture and the operational challenges facing modern legal practices.</p>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Joseph Andrew Lee. All rights reserved.</p>
+        <p style="margin-top: 0.5rem; opacity: 0.8;">Bridging innovation with tradition, technology with trust.</p>
+    </footer>
+</body>
+</html>

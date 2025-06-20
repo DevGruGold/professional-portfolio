@@ -1,0 +1,29 @@
+{
+  "name": "professional-portfolio",
+  "version": "1.0.0",
+  "description": "Professional portfolio for Joseph Andrew Lee / DevGruGold - Harvard-educated CEO and Digital Marketing Strategist",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo 'Static site - no build needed'",
+    "start": "npx serve .",
+    "dev": "npx serve ."
+  },
+  "keywords": [
+    "portfolio",
+    "javascript",
+    "html",
+    "css",
+    "web3",
+    "digital-marketing",
+    "costa-rica",
+    "harvard",
+    "ceo"
+  ],
+  "author": "DevGruGold AKA Joseph Andrew Lee",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DevGruGold/professional-portfolio.git"
+  },
+  "homepage": "https://professional-portfolio-devgrugold.vercel.app"
+}

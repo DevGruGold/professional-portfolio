@@ -1,14 +1,14 @@
-
-
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional portfolio of Joseph Andrew Lee (DevGruGold) - Harvard-educated CEO, Digital Marketing Strategist, and Web3 Entrepreneur based in Costa Rica">
+    <meta name="keywords" content="Joseph Andrew Lee, DevGruGold, Digital Marketing, Web3, Costa Rica, CEO, Harvard, Portfolio">
+    <meta name="author" content="Joseph Andrew Lee">
+    <title>Joseph Andrew Lee - Professional Portfolio | DevGruGold</title>
     
-    
-    
-    
-    
-    Joseph Andrew Lee - Professional Portfolio | DevGruGold
-    
-    
+    <style>
         * {
             margin: 0;
             padding: 0;
@@ -31,210 +31,395 @@
         
         .header {
             background: rgba(255, 255, 255, 0.95);
-            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
             padding: 40px;
             margin-bottom: 30px;
             text-align: center;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
         }
         
         .profile-img {
-            width: 150px;
-            height: 150px;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
             background: linear-gradient(45deg, #667eea, #764ba2);
             margin: 0 auto 20px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 48px;
+            font-size: 36px;
             color: white;
             font-weight: bold;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
         }
         
         h1 {
             color: #2c3e50;
             margin-bottom: 10px;
             font-size: 2.5em;
+            font-weight: 700;
         }
         
         .subtitle {
             color: #7f8c8d;
             font-size: 1.2em;
             margin-bottom: 20px;
+            font-weight: 300;
+        }
+        
+        .tagline {
+            color: #667eea;
+            font-weight: 600;
+            font-size: 1.1em;
         }
         
         .section {
             background: rgba(255, 255, 255, 0.95);
-            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
             padding: 30px;
             margin-bottom: 30px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
         }
         
         h2 {
             color: #2c3e50;
             border-bottom: 3px solid #667eea;
             padding-bottom: 10px;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
+            font-size: 1.8em;
+            font-weight: 600;
+        }
+        
+        h3 {
+            color: #34495e;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+            font-weight: 600;
         }
         
         .companies {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
+            gap: 25px;
             margin-top: 20px;
         }
         
         .company {
-            background: #f8f9fa;
-            padding: 20px;
-            border-radius: 10px;
-            border-left: 4px solid #667eea;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 25px;
+            border-radius: 15px;
+            border-left: 5px solid #667eea;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+        
+        .company:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.15);
+            border-left-color: #5a6fd8;
+        }
+        
+        .company-title {
+            color: #667eea;
+            font-size: 1.4em;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        
+        .company-role {
+            color: #7f8c8d;
+            font-weight: 600;
+            margin-bottom: 12px;
         }
         
         .skills {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
         }
         
         .skill-category {
-            background: #f8f9fa;
-            padding: 20px;
-            border-radius: 10px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+        }
+        
+        .skill-category:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+        }
+        
+        .skill-category h3 {
+            color: #667eea;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+        }
+        
+        .skill-category ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .skill-category li {
+            padding: 8px 0;
+            border-bottom: 1px solid #e9ecef;
+            color: #34495e;
+            font-weight: 500;
+        }
+        
+        .skill-category li:last-child {
+            border-bottom: none;
+        }
+        
+        .skill-category li:before {
+            content: "▸";
+            color: #667eea;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        .education {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin-top: 20px;
+        }
+        
+        .education h3 {
+            color: white;
+            margin-bottom: 15px;
+        }
+        
+        .education ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .education li {
+            padding: 10px 0;
+            font-size: 1.1em;
+            font-weight: 500;
+        }
+        
+        .education li:before {
+            content: "🎓";
+            margin-right: 10px;
         }
         
         .contact {
             text-align: center;
         }
         
+        .location {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 25px;
+            display: inline-block;
+            margin-bottom: 20px;
+            font-weight: 600;
+            font-size: 1.1em;
+        }
+        
         .contact-links {
             display: flex;
             justify-content: center;
-            gap: 20px;
+            gap: 15px;
             flex-wrap: wrap;
-            margin-top: 20px;
+            margin-top: 25px;
         }
         
         .contact-link {
-            background: #667eea;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
             padding: 12px 25px;
             border-radius: 25px;
             text-decoration: none;
-            transition: transform 0.3s ease;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
         }
         
         .contact-link:hover {
-            transform: translateY(-2px);
-            background: #5a6fd8;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+            background: linear-gradient(135deg, #5a6fd8 0%, #6a5acd 100%);
+        }
+        
+        .quote {
+            font-style: italic;
+            font-size: 1.1em;
+            color: #7f8c8d;
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(102, 126, 234, 0.1);
+            border-radius: 15px;
+            border-left: 4px solid #667eea;
         }
         
         @media (max-width: 768px) {
             .container {
-padding: 10px;
+                padding: 15px;
             }
             
             .header {
-padding: 20px;
+                padding: 25px;
             }
             
             h1 {
-font-size: 2em;
+                font-size: 2em;
+            }
+            
+            .section {
+                padding: 20px;
+            }
+            
+            .companies {
+                grid-template-columns: 1fr;
+            }
+            
+            .skills {
+                grid-template-columns: 1fr;
             }
             
             .contact-links {
-flex-direction: column;
-align-items: center;
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .contact-link {
+                width: 200px;
+                text-align: center;
             }
         }
-    
-
-
-    
         
-            JL
-            Joseph Andrew Lee
-            CEO & Digital Marketing Strategist | Harvard Graduate | Costa Rica Operations
-            DevGruGold • Bridging Innovation with Tradition
-        
-
-        
-            About Me
-            Welcome to my professional portfolio! I'm Joseph Andrew Lee, CEO and founder of two innovative companies based in beautiful Costa Rica. With a Harvard Master's in Journalism and a Summa Cum Laude business degree, I combine academic excellence with real-world entrepreneurial success.
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8em;
+            }
             
+            .subtitle {
+                font-size: 1em;
+            }
             
+            .profile-img {
+                width: 100px;
+                height: 100px;
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="profile-img">JL</div>
+            <h1>Joseph Andrew Lee</h1>
+            <p class="subtitle">CEO & Digital Marketing Strategist | Harvard Graduate</p>
+            <p class="tagline">DevGruGold • Bridging Innovation with Tradition</p>
+        </header>
 
-    Party Favor Photo
-    CEO & Founder | 2020 - Present
-    Comprehensive event photography business serving corporate and private clients across Costa Rica and internationally.
-
-
-
-    XMRT.io
-    CEO & Founder | 2021 - Present
-    Innovative Web3 technology platform addressing market inefficiencies through blockchain solutions.
-
+        <section class="section">
+            <h2>About Me</h2>
+            <p>Welcome to my professional portfolio! I'm Joseph Andrew Lee, CEO and founder of two innovative companies based in beautiful Costa Rica. With a Harvard Master's in Journalism and a Summa Cum Laude business degree, I combine academic excellence with real-world entrepreneurial success.</p>
             
-        
+            <div class="companies">
+                <div class="company">
+                    <h3 class="company-title">Party Favor Photo</h3>
+                    <p class="company-role"><strong>CEO & Founder</strong> | 2020 - Present</p>
+                    <p>Comprehensive event photography business serving corporate and private clients across Costa Rica and internationally. Specializing in high-end corporate events, private celebrations, and commercial photography with a focus on delivering exceptional visual storytelling.</p>
+                </div>
+                
+                <div class="company">
+                    <h3 class="company-title">XMRT.io</h3>
+                    <p class="company-role"><strong>CEO & Founder</strong> | 2021 - Present</p>
+                    <p>Innovative Web3 technology platform addressing market inefficiencies through blockchain solutions. Developing cutting-edge applications that bridge traditional business operations with decentralized technology infrastructure.</p>
+                </div>
+            </div>
+        </section>
 
-        
-            Education & Credentials
+        <section class="section">
+            <h2>Education & Credentials</h2>
+            <div class="education">
+                <ul>
+                    <li><strong>Harvard University</strong> - Master of Journalism (2017)</li>
+                    <li><strong>Excelsior College</strong> - Bachelor of Business Administration, <em>Summa Cum Laude</em> (2007)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Core Expertise</h2>
+            <div class="skills">
+                <div class="skill-category">
+                    <h3>Digital Marketing & Strategy</h3>
+                    <ul>
+                        <li>Multi-platform campaign development</li>
+                        <li>Content strategy and brand storytelling</li>
+                        <li>SEO/SEM optimization and analytics</li>
+                        <li>Social media strategy and community building</li>
+                        <li>Marketing automation and CRM integration</li>
+                        <li>Performance marketing and conversion optimization</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Technology & Innovation</h3>
+                    <ul>
+                        <li>Web development and digital platforms</li>
+                        <li>Web3 and blockchain applications</li>
+                        <li>Data analytics and performance measurement</li>
+                        <li>Emerging technology integration</li>
+                        <li>API development and system integration</li>
+                        <li>Cloud infrastructure and deployment</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Professional Services & Leadership</h3>
+                    <ul>
+                        <li>Legal industry expertise and compliance</li>
+                        <li>B2B relationship building and trust development</li>
+                        <li>Team leadership and organizational development</li>
+                        <li>International business operations</li>
+                        <li>Strategic planning and execution</li>
+                        <li>Client relationship management</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section contact">
+            <h2>Let's Connect</h2>
+            <div class="location">📍 San José, Costa Rica • Operating Globally</div>
+            <p>Always interested in discussing digital marketing strategies for professional services, Web3 and blockchain technology applications, international business opportunities, content creation and storytelling, and legal industry marketing challenges.</p>
             
-Harvard University - Master of Journalism (2017)
-Excelsior College - Bachelor of Business Administration, Summa Cum Laude (2007)
+            <div class="contact-links">
+                <a href="mailto:joe@xmrt.io" class="contact-link">📧 Primary Email</a>
+                <a href="mailto:joeyleepcs@gmail.com" class="contact-link">📧 Alternative Email</a>
+                <a href="https://muckrack.com/joseph_a_lee" class="contact-link" target="_blank">📰 Journalism Portfolio</a>
+                <a href="https://github.com/DevGruGold" class="contact-link" target="_blank">💻 GitHub</a>
+            </div>
             
-        
-
-        
-            Core Expertise
-            
-
-    Digital Marketing & Strategy
-    
-        Multi-platform campaign development
-        Content strategy and brand storytelling
-        SEO/SEM optimization and analytics
-        Social media strategy
-    
-
-
-
-    Technology & Innovation
-    
-        Web development and digital platforms
-        Web3 and blockchain applications
-        Data analytics and performance measurement
-        Emerging technology integration
-    
-
-
-
-    Professional Services
-    
-        Legal industry expertise
-        B2B relationship building
-        Compliance and ethical marketing
-        International business operations
-    
-
-            
-        
-
-        
-            Let's Connect
-            Based in San José, Costa Rica • Operating Globally
-            Always interested in discussing digital marketing strategies, Web3 applications, and international business opportunities.
-            
-            
-Email
-Alternative Email
-Journalism Portfolio
-GitHub
-            
-            
-            "Bridging innovation with tradition, technology with trust, and global perspective with local expertise."
-        
-    
-
+            <div class="quote">
+                "Bridging innovation with tradition, technology with trust, and global perspective with local expertise."
+            </div>
+        </section>
+    </div>
+</body>
+</html>

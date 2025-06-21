@@ -1,7 +1,5 @@
 # Joseph Andrew Lee - Professional Portfolio
 
-![Profile Banner](https://via.placeholder.com/800x200/2c3e50/ffffff?text=Joseph+Andrew+Lee+-+Digital+Marketing+Strategist)
-
 ## 🌟 About Me
 
 Welcome to my professional portfolio! I'm Joseph Andrew Lee, CEO and founder of two innovative companies based in beautiful Costa Rica. With a Harvard Master's in Journalism and a Summa Cum Laude business degree, I combine academic excellence with real-world entrepreneurial success.

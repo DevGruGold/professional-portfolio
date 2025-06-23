@@ -9,21 +9,26 @@
     "dev": "npx serve ."
   },
   "keywords": [
-    "portfolio",
-    "javascript",
-    "html",
-    "css",
+    "blockchain",
+    "cryptocurrency",
+    "privacy",
+    "defi",
+    "financial-freedom",
+    "liberty",
     "web3",
-    "digital-marketing",
-    "costa-rica",
-    "harvard",
-    "ceo"
+    "decentralized",
+    "crypto",
+    "privacy-tech",
+    "smart-contracts",
+    "ethereum",
+    "bitcoin",
+    "web3"
   ],
-  "author": "DevGruGold AKA Joseph Andrew Lee",
+  "author": "Joe - XMRT",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/DevGruGold/professional-portfolio.git"
+    "url": "git+https://github.com/DevGruGold/professional-portfolio.git"
   },
   "homepage": "https://professional-portfolio-devgrugold.vercel.app"
 }
